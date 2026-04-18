@@ -32,8 +32,8 @@
   --color-heading:    #11243f;
   --color-btn-text:   #ffffff;
   --nav-overlay:      rgba(243, 247, 241, 0.48);
-  --nav-banner-image: url("../images/header.png");
-  --cover-banner-image: url("../images/banner_light.png");
+  --nav-banner-image: url("../images/header.jpg");
+  --cover-banner-image: url("../images/banner_light.jpg");
   --footer-overlay:   rgba(243, 247, 241, 0.72);
   --footer-text:      #21324e;
   --footer-link:      #244f96;
@@ -77,8 +77,8 @@
   --color-heading:    #f2f6ff;
   --color-btn-text:   #ffffff;
   --nav-overlay:      rgba(9, 15, 25, 0.68);
-  --nav-banner-image: url("../images/header.png");
-  --cover-banner-image: url("../images/banner_dark.png");
+  --nav-banner-image: url("../images/header.jpg");
+  --cover-banner-image: url("../images/banner_dark.jpg");
   --footer-overlay:   rgba(9, 15, 25, 0.82);
   --footer-text:      #dce6f5;
   --footer-link:      #8eb0ff;
