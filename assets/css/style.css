@@ -226,11 +226,8 @@ nav {
 }
 
 .site-cover-home {
-  min-height: 0;
-  aspect-ratio: 4 / 1;
-  background-size: contain;
-  background-position: center center;
-  background-color: var(--color-surface);
+  min-height: 180px;
+  background-position: center 34%;
 }
 
 .site-cover-compact {
@@ -510,7 +507,7 @@ footer {
   .nav-links a { padding: 6px 8px; font-size: 0.85rem; }
   .theme-toggle-btn { width: 30px; height: 30px; font-size: 0.9rem; }
   .site-cover-wrap { padding: 12px 16px 0; }
-  .site-cover-home { aspect-ratio: 4 / 1; background-size: contain; background-position: center center; }
+  .site-cover-home { min-height: 128px; background-position: 62% center; }
   .site-cover-compact { min-height: 128px; background-position: 62% center; }
   .hero { padding: 48px 0 40px; }
   .hero-banner { border-radius: 10px; }
