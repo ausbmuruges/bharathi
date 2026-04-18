@@ -21,15 +21,62 @@
         <a href="../work/index.html">Work</a>
         <a href="../opensource/index.html" class="active">Open Source</a>
         <a href="../writing/index.html">Writing</a>
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Switch color theme">☾</button>
       </div>
     </div>
   </nav>
+
+  <div class="site-cover-wrap" aria-hidden="true">
+    <div class="site-cover site-cover-compact"></div>
+  </div>
 
   <div class="page">
     <div class="page-header">
       <p class="section-label">// open source</p>
       <h1>Open Source</h1>
       <p>Projects I maintain, repositories I contribute to, and community work I care about.</p>
+
+      <div class="brand-kit" aria-label="Bharathi brand color palette">
+        <h3>Bharathi Brand Tokens v1</h3>
+        <p>
+          Custom palette for future work: close to enterprise utility tones, but intentionally adjusted
+          with nearby color values so it remains unique to this profile.
+        </p>
+        <div class="brand-swatches">
+          <div class="brand-swatch">
+            <div class="brand-swatch-color" style="background:#2B406F;"></div>
+            <div class="brand-swatch-meta"><span class="brand-swatch-name">Navy</span><span class="brand-swatch-hex">#2B406F</span></div>
+          </div>
+          <div class="brand-swatch">
+            <div class="brand-swatch-color" style="background:#3160B6;"></div>
+            <div class="brand-swatch-meta"><span class="brand-swatch-name">Ocean</span><span class="brand-swatch-hex">#3160B6</span></div>
+          </div>
+          <div class="brand-swatch">
+            <div class="brand-swatch-color" style="background:#1A97C8;"></div>
+            <div class="brand-swatch-meta"><span class="brand-swatch-name">Sky</span><span class="brand-swatch-hex">#1A97C8</span></div>
+          </div>
+          <div class="brand-swatch">
+            <div class="brand-swatch-color" style="background:#86BF48;"></div>
+            <div class="brand-swatch-meta"><span class="brand-swatch-name">Leaf</span><span class="brand-swatch-hex">#86BF48</span></div>
+          </div>
+          <div class="brand-swatch">
+            <div class="brand-swatch-color" style="background:#1ABD84;"></div>
+            <div class="brand-swatch-meta"><span class="brand-swatch-name">Mint</span><span class="brand-swatch-hex">#1ABD84</span></div>
+          </div>
+          <div class="brand-swatch">
+            <div class="brand-swatch-color" style="background:#B4D44F;"></div>
+            <div class="brand-swatch-meta"><span class="brand-swatch-name">Lime</span><span class="brand-swatch-hex">#B4D44F</span></div>
+          </div>
+          <div class="brand-swatch">
+            <div class="brand-swatch-color" style="background:#F2C21A;"></div>
+            <div class="brand-swatch-meta"><span class="brand-swatch-name">Gold</span><span class="brand-swatch-hex">#F2C21A</span></div>
+          </div>
+          <div class="brand-swatch">
+            <div class="brand-swatch-color" style="background:#1D2027;"></div>
+            <div class="brand-swatch-meta"><span class="brand-swatch-name">Carbon</span><span class="brand-swatch-hex">#1D2027</span></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ── Maintained Projects ── -->
@@ -182,6 +229,38 @@
     </div>
   </footer>
 
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      const storedTheme = localStorage.getItem('theme-preference');
+
+      if (storedTheme === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+      }
+
+      const syncToggleLabel = () => {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        toggle.textContent = isDark ? '☀' : '☾';
+        toggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+      };
+
+      syncToggleLabel();
+
+      toggle.addEventListener('click', () => {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          root.removeAttribute('data-theme');
+          localStorage.setItem('theme-preference', 'light');
+        } else {
+          root.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme-preference', 'dark');
+        }
+        syncToggleLabel();
+      });
+    })();
+  </script>
 </body>
 </html>

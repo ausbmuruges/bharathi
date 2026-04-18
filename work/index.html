@@ -21,9 +21,14 @@
         <a href="../work/index.html" class="active">Work</a>
         <a href="../opensource/index.html">Open Source</a>
         <a href="../writing/index.html">Writing</a>
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Switch color theme">☾</button>
       </div>
     </div>
   </nav>
+
+  <div class="site-cover-wrap" aria-hidden="true">
+    <div class="site-cover site-cover-compact"></div>
+  </div>
 
   <div class="page">
     <div class="page-header">
@@ -125,7 +130,7 @@
             2021–Now
           </div>
           <div>
-            <h3 style="color:#fff; font-size:1rem; font-weight:700;">Solution Architect</h3>
+            <h3 style="color:var(--color-heading); font-size:1rem; font-weight:700;">Solution Architect</h3>
             <p style="color:var(--color-accent); font-size:0.88rem; margin: 2px 0 8px;">Wipro Limited &middot; Melbourne, Australia</p>
             <p style="color:var(--color-muted); font-size:0.9rem; max-width:520px;">
               Led end-to-end architecture for electricity and gas utility programs including
@@ -149,7 +154,7 @@
             2018–2021
           </div>
           <div>
-            <h3 style="color:#fff; font-size:1rem; font-weight:700;">Technical Lead – Data Engineering</h3>
+            <h3 style="color:var(--color-heading); font-size:1rem; font-weight:700;">Technical Lead – Data Engineering</h3>
             <p style="color:var(--color-accent); font-size:0.88rem; margin: 2px 0 8px;">Wipro Limited &middot; Melbourne, Australia</p>
             <p style="color:var(--color-muted); font-size:0.9rem; max-width:520px;">
               Delivered an Azure-based Lakehouse platform integrating streaming and batch pipelines.
@@ -173,7 +178,7 @@
             2015–2018
           </div>
           <div>
-            <h3 style="color:#fff; font-size:1rem; font-weight:700;">Project Engineer – Data Engineering &amp; Warehousing</h3>
+            <h3 style="color:var(--color-heading); font-size:1rem; font-weight:700;">Project Engineer – Data Engineering &amp; Warehousing</h3>
             <p style="color:var(--color-accent); font-size:0.88rem; margin: 2px 0 8px;">Wipro Limited &middot; India</p>
             <p style="color:var(--color-muted); font-size:0.9rem; max-width:520px;">
               Built ETL/ELT workflows using IBM DataStage and Oracle Data Integrator for
@@ -208,6 +213,38 @@
     </div>
   </footer>
 
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      const storedTheme = localStorage.getItem('theme-preference');
+
+      if (storedTheme === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+      }
+
+      const syncToggleLabel = () => {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        toggle.textContent = isDark ? '☀' : '☾';
+        toggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+      };
+
+      syncToggleLabel();
+
+      toggle.addEventListener('click', () => {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          root.removeAttribute('data-theme');
+          localStorage.setItem('theme-preference', 'light');
+        } else {
+          root.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme-preference', 'dark');
+        }
+        syncToggleLabel();
+      });
+    })();
+  </script>
 </body>
 </html>
