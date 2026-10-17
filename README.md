@@ -21,6 +21,8 @@ Source for my personal profile site, hosted via **GitHub Pages**.
 ├── writing/index.html      # Writing index
 ├── assets/
 │   ├── css/style.css       # Shared stylesheet
+│   ├── js/main.js          # Shared theme and footer script
+│   ├── diagrams/           # Editable Draw.io source diagrams
 │   └── images/             # Portfolio banners and SVG network art
 ├── .github/
 │   └── copilot-instructions.md  # Copilot content guardrails

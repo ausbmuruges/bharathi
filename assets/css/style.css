@@ -454,6 +454,23 @@ nav {
 .credential-card:hover { border-color: var(--color-accent-dim); transform: translateY(-2px); text-decoration: none; }
 .credential-card:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 .credential-card img { width: 72px; height: 72px; object-fit: contain; align-self: center; margin: 0 auto 4px; }
+.credential-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  align-self: center;
+  margin: 0 auto 4px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.credential-avatar--microsoft { background: linear-gradient(135deg, #f25022, #7fba00, #00a4ef, #ffb900); }
+.credential-avatar--wipro { background: linear-gradient(135deg, #005b9a, #00a0dc); }
+.credential-avatar--databricks { background: linear-gradient(135deg, #e25a2b, #ff8a4c); }
+.credential-avatar--fivetran { background: linear-gradient(135deg, #5c6bc0, #2f80ed); }
 .credential-issuer { color: var(--color-accent); font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; }
 .credential-card h3 { color: var(--color-heading); font-size: 0.95rem; line-height: 1.35; }
 .credential-date { color: var(--color-muted); font-size: 0.78rem; line-height: 1.5; }
