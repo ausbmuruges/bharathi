@@ -6,10 +6,10 @@ Source for my personal profile site, hosted via **GitHub Pages**.
 
 | Page | Description |
 |---|---|
-| [About](index.html) | Landing page, bio, and skills |
-| [Work](work/index.html) | Projects and professional experience |
-| [Open Source](opensource/index.html) | Contributions and maintained repos |
-| [Writing](writing/index.html) | Articles, essays, and technical posts |
+| [About](index.html) | Role, capabilities, delivery highlights, and professional links |
+| [Work](work/index.html) | Architecture case studies and career timeline |
+| [Open Source](opensource/index.html) | Public GitHub activity and verified credentials |
+| [Writing](writing/index.html) | Reserved for public articles; currently omitted from site navigation |
 
 ## Structure
 
@@ -20,7 +20,8 @@ Source for my personal profile site, hosted via **GitHub Pages**.
 ├── opensource/index.html   # Open source contributions
 ├── writing/index.html      # Writing index
 ├── assets/
-│   └── css/style.css       # Shared stylesheet
+│   ├── css/style.css       # Shared stylesheet
+│   └── images/             # Portfolio banners and SVG network art
 ├── .github/
 │   └── copilot-instructions.md  # Copilot content guardrails
 └── README.md

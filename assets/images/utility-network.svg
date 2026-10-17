@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 440" role="img" aria-labelledby="title description">
+  <title id="title">Electricity and gas utility network</title>
+  <desc id="description">Illustrative electricity and gas networks showing transmission, substations, distribution, customer connections, and shared telemetry operations.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#25374d" stroke-width="1" />
+    </pattern>
+    <marker id="electric-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 8 4 0 8Z" fill="#69d8ed" />
+    </marker>
+    <marker id="gas-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 8 4 0 8Z" fill="#f0b767" />
+    </marker>
+  </defs>
+
+  <rect width="1440" height="440" rx="16" fill="#101a2a" />
+  <rect width="1440" height="440" rx="16" fill="url(#grid)" opacity=".42" />
+
+  <text x="42" y="42" fill="#eff5fa" font-family="IBM Plex Sans, sans-serif" font-size="26" font-weight="600">ENERGY &amp; UTILITIES</text>
+  <text x="1398" y="42" fill="#92a7bb" font-family="IBM Plex Mono, monospace" font-size="20" text-anchor="end">NETWORK OVERVIEW</text>
+  <path d="M42 58H1398" stroke="#30435b" />
+
+  <rect x="32" y="74" width="1376" height="136" rx="12" fill="#14263b" stroke="#2b4056" />
+  <rect x="32" y="222" width="1376" height="136" rx="12" fill="#192638" stroke="#3b4050" />
+
+  <rect x="50" y="88" width="8" height="24" rx="4" fill="#69d8ed" />
+  <text x="72" y="107" fill="#dcecf3" font-family="IBM Plex Mono, monospace" font-size="20" font-weight="500">ELECTRICITY</text>
+  <text x="435" y="107" fill="#8fa8bc" font-family="IBM Plex Mono, monospace" font-size="17">TRANSMISSION</text>
+  <text x="1006" y="107" fill="#8fa8bc" font-family="IBM Plex Mono, monospace" font-size="17">DISTRIBUTION</text>
+
+  <path d="M184 138H731" fill="none" stroke="#69d8ed" stroke-width="4" stroke-linecap="round" marker-end="url(#electric-arrow)" />
+  <path d="M744 138H1318" fill="none" stroke="#76a9ff" stroke-width="4" stroke-linecap="round" marker-end="url(#electric-arrow)" />
+  <g fill="#14263b" stroke="#69d8ed" stroke-width="2.5">
+    <circle cx="184" cy="138" r="13" />
+    <circle cx="455" cy="138" r="13" />
+    <circle cx="744" cy="138" r="13" />
+  </g>
+  <g fill="#14263b" stroke="#76a9ff" stroke-width="2.5">
+    <circle cx="1030" cy="138" r="13" />
+    <circle cx="1318" cy="138" r="13" />
+  </g>
+  <g fill="#eaf2f8" font-family="IBM Plex Sans, sans-serif" font-size="20" font-weight="500" text-anchor="middle">
+    <text x="184" y="178">Generation &amp; grid entry</text>
+    <text x="455" y="178">High-voltage lines</text>
+    <text x="744" y="178">Substations</text>
+    <text x="1030" y="178">Feeders &amp; local grid</text>
+    <text x="1318" y="178">Meters &amp; customers</text>
+  </g>
+
+  <rect x="50" y="236" width="8" height="24" rx="4" fill="#f0b767" />
+  <text x="72" y="255" fill="#f3e8d8" font-family="IBM Plex Mono, monospace" font-size="20" font-weight="500">GAS</text>
+  <text x="435" y="255" fill="#b7a792" font-family="IBM Plex Mono, monospace" font-size="17">TRANSMISSION</text>
+  <text x="1006" y="255" fill="#b7a792" font-family="IBM Plex Mono, monospace" font-size="17">DISTRIBUTION</text>
+
+  <path d="M184 286H731" fill="none" stroke="#f0b767" stroke-width="4" stroke-linecap="round" marker-end="url(#gas-arrow)" />
+  <path d="M744 286H1318" fill="none" stroke="#e89261" stroke-width="4" stroke-linecap="round" marker-end="url(#gas-arrow)" />
+  <g fill="#192638" stroke="#f0b767" stroke-width="2.5">
+    <circle cx="184" cy="286" r="13" />
+    <circle cx="455" cy="286" r="13" />
+    <circle cx="744" cy="286" r="13" />
+  </g>
+  <g fill="#192638" stroke="#e89261" stroke-width="2.5">
+    <circle cx="1030" cy="286" r="13" />
+    <circle cx="1318" cy="286" r="13" />
+  </g>
+  <g fill="#f4eee7" font-family="IBM Plex Sans, sans-serif" font-size="20" font-weight="500" text-anchor="middle">
+    <text x="184" y="326">Supply &amp; entry</text>
+    <text x="455" y="326">Pipelines &amp; compressors</text>
+    <text x="744" y="326">City gate &amp; regulation</text>
+    <text x="1030" y="326">Distribution mains</text>
+    <text x="1318" y="326">Meters &amp; customers</text>
+  </g>
+
+  <path d="M184 191V381M455 191V381M744 191V381M1030 191V381M1318 191V381" fill="none" stroke="#8194aa" stroke-width="1.5" stroke-dasharray="4 7" opacity=".48" />
+  <path d="M184 381H1318" fill="none" stroke="#91a2b4" stroke-width="2" stroke-dasharray="6 7" />
+  <g fill="#b6c4d1">
+    <circle cx="184" cy="381" r="4" />
+    <circle cx="455" cy="381" r="4" />
+    <circle cx="744" cy="381" r="4" />
+    <circle cx="1030" cy="381" r="4" />
+    <circle cx="1318" cy="381" r="4" />
+  </g>
+  <text x="720" y="414" fill="#b6c4d1" font-family="IBM Plex Mono, monospace" font-size="19" text-anchor="middle">SCADA · TELEMETRY · CONTROL OPERATIONS</text>
+</svg>

@@ -3,179 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bharathi Murugesan – Technical writing on data engineering, cloud architecture, and the utility sector." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="description" content="Public technical writing by Bharathi Murugesan on data engineering, cloud architecture, and energy and utilities." />
   <title>Writing · Bharathi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <!-- ── Navigation ── -->
-  <nav>
+  <nav aria-label="Primary navigation">
     <div class="nav-inner">
       <a href="../index.html" class="nav-brand">bharathi<span>.</span></a>
       <div class="nav-links">
         <a href="../index.html">About</a>
         <a href="../work/index.html">Work</a>
         <a href="../opensource/index.html">Open Source</a>
-        <a href="../writing/index.html" class="active">Writing</a>
+        <a href="https://www.linkedin.com/in/bharathimsb/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Switch color theme">☾</button>
       </div>
     </div>
   </nav>
 
-  <div class="site-cover-wrap" aria-hidden="true">
-    <div class="site-cover site-cover-compact"></div>
-  </div>
-
-  <div class="page">
+  <main class="page" id="main-content">
     <div class="page-header">
-      <p class="section-label">// writing</p>
+      <p class="section-label">Writing</p>
       <h1>Writing</h1>
       <p>Technical articles, architecture insights, and notes on data engineering, cloud platforms, and the utility sector.</p>
     </div>
 
-    <!-- ── Featured Articles ── -->
-    <section class="section" style="margin-top: 0;">
-      <p class="section-label">// featured</p>
-      <h2>Featured Articles</h2>
-
-      <div class="card-grid">
-
-        <!-- FEATURED CARD — duplicate as needed -->
-        <a href="#" class="card" style="text-decoration:none;" target="_blank" rel="noopener">
-          <div class="tags">
-            <!-- TODO: Replace tag with actual topic -->
-            <span class="tag">distributed systems</span>
-          </div>
-          <h3>
-            <!-- TODO: Replace with actual article title -->
-            Understanding Backpressure in Stream Processing
-          </h3>
-          <p>
-            <!-- TODO: Replace with actual article excerpt / summary -->
-            A deep dive into how backpressure works in reactive systems and practical
-            strategies for preventing cascading failures under high load.
-          </p>
-          <div class="card-footer">
-            <span style="font-size:0.8rem; color:var(--color-muted); font-family:var(--font-mono);">
-              <!-- TODO: Replace with publish date -->
-              Mar 2025
-            </span>
-            <span style="font-size:0.8rem; color:var(--color-accent);">Read →</span>
-          </div>
-        </a>
-
-        <a href="#" class="card" style="text-decoration:none;" target="_blank" rel="noopener">
-          <div class="tags">
-            <span class="tag">developer experience</span>
-          </div>
-          <h3>Building CLIs That Developers Actually Want to Use</h3>
-          <p>
-            Principles and patterns I've found that separate a frustrating CLI from
-            one that feels intuitive from the first run.
-          </p>
-          <div class="card-footer">
-            <span style="font-size:0.8rem; color:var(--color-muted); font-family:var(--font-mono);">Jan 2025</span>
-            <span style="font-size:0.8rem; color:var(--color-accent);">Read →</span>
-          </div>
-        </a>
-
-      </div>
+    <section class="section section--flush">
+      <p class="section-label">Publications</p>
+      <h2>Published Writing</h2>
+      <p class="writing-empty-state">Articles and publications will be listed here when public links are available.</p>
     </section>
 
-    <hr class="divider" />
-
-    <!-- ── All Articles ── -->
-    <section class="section">
-      <p class="section-label">// all posts</p>
-      <h2>All Writing</h2>
-
-      <ul class="post-list">
-
-        <!-- POST ENTRY — duplicate as needed; order newest-first -->
-        <li class="post-item">
-          <a href="#" class="post-title" target="_blank" rel="noopener">
-            <!-- TODO: Replace with actual post title -->
-            Understanding Backpressure in Stream Processing
-          </a>
-          <span class="post-meta">Mar 2025</span>
-        </li>
-
-        <li class="post-item">
-          <a href="#" class="post-title" target="_blank" rel="noopener">
-            Building CLIs That Developers Actually Want to Use
-          </a>
-          <span class="post-meta">Jan 2025</span>
-        </li>
-
-        <li class="post-item">
-          <a href="#" class="post-title" target="_blank" rel="noopener">
-            Lessons from Migrating a Monolith to Microservices
-          </a>
-          <span class="post-meta">Oct 2024</span>
-        </li>
-
-        <li class="post-item">
-          <a href="#" class="post-title" target="_blank" rel="noopener">
-            Why I Switched from Pytest Fixtures to Factory Functions
-          </a>
-          <span class="post-meta">Aug 2024</span>
-        </li>
-
-        <li class="post-item">
-          <a href="#" class="post-title" target="_blank" rel="noopener">
-            Making Sense of OpenTelemetry in Practice
-          </a>
-          <span class="post-meta">May 2024</span>
-        </li>
-
-        <!-- TODO: Add more posts here as you publish -->
-
-      </ul>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- ── External Publications ── -->
-    <section class="section">
-      <p class="section-label">// external</p>
-      <h2>Published Elsewhere</h2>
-      <p style="color:var(--color-muted); margin-bottom:20px; font-size:0.9rem;">
-        Guest posts, publications, and articles on external platforms.
-      </p>
-
-      <ul class="post-list">
-        <li class="post-item">
-          <div>
-            <a href="#" class="post-title" target="_blank" rel="noopener">
-              <!-- TODO: Replace with actual external post title -->
-              Article Title on External Platform
-            </a>
-            <div style="margin-top:4px;">
-              <span class="tag">
-                <!-- TODO: Replace with publication name, e.g. dev.to, Medium, InfoQ -->
-                dev.to
-              </span>
-            </div>
-          </div>
-          <span class="post-meta">2024</span>
-        </li>
-        <!-- TODO: Add more external publications here -->
-      </ul>
-    </section>
-
-  </div>
+  </main>
 
   <!-- ── Footer ── -->
   <footer>
     <div class="footer-inner">
       <p>Built with GitHub Pages &middot; &copy; <span id="yr"></span> Bharathi</p>
       <p>
-        <a href="https://github.com/ausbmuruges/bharathi" target="_blank" rel="noopener"
-           style="color:var(--color-muted); font-size:0.82rem;">
+        <a href="https://github.com/ausbmuruges/bharathi" class="footer-source-link" target="_blank" rel="noopener noreferrer">
           View source on GitHub
         </a>
       </p>
