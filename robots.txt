@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ausbmuruges.github.io/bharathi/sitemap.xml
+

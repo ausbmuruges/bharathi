@@ -26,6 +26,8 @@ Source for my personal profile site, hosted via **GitHub Pages**.
 │   └── images/             # Portfolio banners and SVG network art
 ├── .github/
 │   └── copilot-instructions.md  # Copilot content guardrails
+├── robots.txt              # Search crawler directives
+├── sitemap.xml             # XML sitemap for search engines
 └── README.md
 ```
 
